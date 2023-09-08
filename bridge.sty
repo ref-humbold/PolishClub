@@ -1,0 +1,49 @@
+\usepackage{arev}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{ulem}
+
+\makeatletter
+
+\newcommand{\BidRef}[2]{\texorpdfstring{\hyperref[#1]{#2}}{#2}}
+\newcommand{\BidSection}[3]{\section*{\label{#1} \Large{#2} \\[1ex] \small{#3}} \vspace{1em}}
+
+\newcommand{\ClubSym}{$\clubsuit$}
+\newcommand{\DiamondSym}{$\vardiamond$}
+\newcommand{\HeartSym}{$\varheart$}
+\newcommand{\SpadeSym}{$\spadesuit$}
+\newcommand{\NoTrumpSym}{\texttt{NT}}
+
+\newcommand{\PassBid}{\textcolor{LimeGreen}{\texttt{Pass}}}
+\newcommand{\ClubBid}[1]{\textbf{#1 \textcolor{ForestGreen}{\ClubSym}}}
+\newcommand{\DiamondBid}[1]{\textbf{#1 \textcolor{Orange}{\DiamondSym}}}
+\newcommand{\HeartBid}[1]{\textbf{#1 \textcolor{Red}{\HeartSym}}}
+\newcommand{\SpadeBid}[1]{\textbf{#1 \textcolor{Blue}{\SpadeSym}}}
+\newcommand{\NoTrumpBid}[1]{\textbf{#1 \textcolor{Black}{\NoTrumpSym}}}
+\newcommand{\DoubleBid}{\textcolor{Red}{\texttt{D}}}
+\newcommand{\ReDoubleBid}{\textcolor{Blue}{\texttt{RD}}}
+
+\newcommand{\ClubHand}[1]{#1\ClubSym}
+\newcommand{\DiamondHand}[1]{#1\DiamondSym}
+\newcommand{\HeartHand}[1]{#1\HeartSym}
+\newcommand{\SpadeHand}[1]{#1\SpadeSym}
+\newcommand{\MajorHand}[1]{#1\texttt{M}}
+\newcommand{\MinorHand}[1]{#1\texttt{m}}
+
+\newcommand{\ListSep}[2][]{#2\@ifnextchar\bgroup{#1\ListSep[#1]}{}}
+\newcommand{\No}[1]{no #1}
+\newcommand{\And}{\ListSep[ and ]}
+\newcommand{\Or}{\ListSep[ or ]}
+\newcommand{\Variant}[1][\hspace{1ex}]{\ListSep[#1$\mid$\hspace{1ex}]}
+
+\newcommand{\PCrange}[2]{#1 - #2 \texttt{PC}}
+\newcommand{\PCsingle}[1]{#1 \texttt{PC}}
+
+\newcommand{\Balanced}{\textbf{\texttt{balanced}}}
+\newcommand{\Relay}{\textbf{\texttt{relay}}}
+\newcommand{\Transfer}[1]{\textit{transfer} #1}
+\newcommand{\CueBid}[1]{\textit{cue-bid} #1}
+
+\newcommand{\Convention}[3][\hspace{1ex}]{\textit{\textcolor{Magenta}{#2}}#1#3}
+\newcommand{\Alert}[1]{\fcolorbox{Magenta}{gray!20}{\textbf{\textcolor{Red}{\texttt{!}}}\hspace{1ex}#1}}
+\newcommand{\GameForcing}[1]{\uline{#1}}
+\newcommand{\SlamForcing}[1]{\uuline{#1}}
