@@ -4,6 +4,9 @@
 
 \makeatletter
 
+\newcommand{\List}[2][]{#2\@ifnextchar\bgroup{#1\List[#1]}{}}
+\newcommand{\Enumerator}[2][]{#1\hspace{1ex}#2\@ifnextchar\bgroup{\\\Enumerator[#1]}{}}
+
 \newcommand{\BidRef}[2]{\texorpdfstring{\hyperref[#1]{#2}}{#2}}
 \newcommand{\BidSection}[3]{\section*{\label{#1} \Large{#2} \\[1ex] \small{#3}} \vspace{1em}}
 
@@ -29,11 +32,10 @@
 \newcommand{\MajorHand}[1]{#1\texttt{M}}
 \newcommand{\MinorHand}[1]{#1\texttt{m}}
 
-\newcommand{\ListSep}[2][]{#2\@ifnextchar\bgroup{#1\ListSep[#1]}{}}
 \newcommand{\No}[1]{no #1}
-\newcommand{\And}{\ListSep[ and ]}
-\newcommand{\Or}{\ListSep[ or ]}
-\newcommand{\Variant}[1][\hspace{1ex}]{\ListSep[#1$\mid$\hspace{1ex}]}
+\newcommand{\And}{\List[ and ]}
+\newcommand{\Or}{\List[ or ]}
+\newcommand{\Variant}[1][]{#1\Enumerator[$\mid$]}
 
 \newcommand{\PCrange}[2]{#1 - #2 \texttt{PC}}
 \newcommand{\PCsingle}[1]{#1 \texttt{PC}}
