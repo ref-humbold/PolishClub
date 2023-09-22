@@ -10,7 +10,7 @@
 }
 
 \begin{description}
-    \item[\HeartBid{1}] \HeartHand{4+}, \PCsingle{$\geq$7}
+    \item[\HeartBid{1}] \HeartHand{4+}, \PCfrom{7}
         \begin{description}
             \item[\SpadeBid{1}] \SpadeHand{4}
             \item[\ClubBid{2}]
@@ -18,8 +18,19 @@
                 {\And{\DiamondHand{5}}{\ClubHand{4+}}, \PCrange{12}{17}}
                 {\And{\ClubHand{5}}{\DiamondHand{4+}}, \PCrange{12}{14}}
         \end{description}
-    \item[\SpadeBid{1}] \SpadeHand{4+}, \PCsingle{$\geq$7}
+    \item[\SpadeBid{1}] \SpadeHand{4+}, \PCfrom{7}
+        \begin{description}
+            \item[\ClubBid{2}]
+                \Variant
+                {\And{\DiamondHand{5}}{\ClubHand{4+}}, \PCrange{12}{17}}
+                {\And{\ClubHand{5}}{\DiamondHand{4+}}, \PCrange{12}{14}}
+        \end{description}
     \item[\NoTrumpBid{1}] \Balanced, \No{\MajorHand{4+}}, \PCrange{7}{10}
+    \item[\ClubBid{2}]
+        \Variant
+        {\ClubHand{5+}, \PCfrom{12}}
+        {\ClubHand{6+}, \PCrange{9}{11}}
+    \item[\DiamondBid{2}] \And{\DiamondHand{4+}}{\No{\MajorHand{4+}}}, \PCfrom{10}
 \end{description}
 
 \end{document}
