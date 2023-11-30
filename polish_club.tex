@@ -12,61 +12,61 @@
 \begin{document}
 
 \begin{titlepage}
-    \centering
-    \vspace*{0.4\textheight}
+  \centering
+  \vspace*{0.4\textheight}
 
-    \textbf{\Huge Polish Club}
+  \textbf{\Huge Polish Club}
 
-    \vspace{2em}
+  \vspace{2em}
 
-    {\large bridge bidding system handbook}
+  {\large bridge bidding system handbook}
 \end{titlepage}
 
 \section*{Openings}
 
 \begin{description}
-    \item[\BidRef{bid:1club}{\ClubBid{1}}]
+  \item[\BidRef{bid:1club}{\ClubBid{1}}]
         \Variant
         {\Balanced, \PCrange{12}{14}}
         {\ClubHand{5+}, \PCrange{15}{17}}
         {4441 with single \DiamondSymbol, \PCrange{12}{17}}
         {any, \PCfrom{18}}
-    \item[\BidRef{bid:1diamond}{\DiamondBid{1}}]
+  \item[\BidRef{bid:1diamond}{\DiamondBid{1}}]
         \Variant
         {\DiamondHand{5+}, \PCrange{12}{17}}
         {4441 no single \DiamondSymbol, \PCrange{12}{17}}
         {\And{\ClubHand{5}}{\DiamondHand{4+}}, \PCrange{12}{14}}
-    \item[\BidRef{bid:1heart}{\HeartBid{1}}]
+  \item[\BidRef{bid:1heart}{\HeartBid{1}}]
         \HeartHand{5+}, \PCrange{12}{17}
-    \item[\BidRef{bid:1spade}{\SpadeBid{1}}]
+  \item[\BidRef{bid:1spade}{\SpadeBid{1}}]
         \SpadeHand{5+}, \PCrange{12}{17}
-    \item[\BidRef{bid:1notrump}{\NoTrumpBid{1}}]
+  \item[\BidRef{bid:1notrump}{\NoTrumpBid{1}}]
         \Balanced, \PCrange{15}{17}
-    \item[\BidRef{bid:2club}{\Alert{\ClubBid{2}}}]
+  \item[\BidRef{bid:2club}{\Alert{\ClubBid{2}}}]
         \Convention{precision}{
-            \Or{\ClubHand{6+}}{\And{\ClubHand{5+}}{\MajorHand{4}}}, \PCrange{11}{14}
+          \Or{\ClubHand{6+}}{\And{\ClubHand{5+}}{\MajorHand{4}}}, \PCrange{11}{14}
         }
-    \item[\BidRef{bid:2diamond}{\Alert{\DiamondBid{2}}}]
+  \item[\BidRef{bid:2diamond}{\Alert{\DiamondBid{2}}}]
         \Convention{multi}{
-            \Or
-            {\And{\HeartHand{6}}{\No{\SpadeHand{4}}}}
-            {\And{\SpadeHand{6}}{\No{\HeartHand{4}}}}, \PCrange{6}{11}
+          \Or
+          {\And{\HeartHand{6}}{\No{\SpadeHand{4}}}}
+          {\And{\SpadeHand{6}}{\No{\HeartHand{4}}}}, \PCrange{6}{11}
         }
-    \item[\BidRef{bid:2heart}{\Alert{\HeartBid{2}}}]
+  \item[\BidRef{bid:2heart}{\Alert{\HeartBid{2}}}]
         \Or
         {\And{\HeartHand{5+}}{\SpadeHand{5+}}}
         {\And{\HeartHand{5+}}{\MinorHand{5+}}}, \PCrange{6}{11}
-    \item[\BidRef{bid:2spade}{\Alert{\SpadeBid{2}}}]
+  \item[\BidRef{bid:2spade}{\Alert{\SpadeBid{2}}}]
         \And{\SpadeHand{5+}}{\MinorHand{5+}}, \PCrange{6}{11}
-    \item[\BidRef{bid:2notrump}{\Alert{\NoTrumpBid{2}}}]
+  \item[\BidRef{bid:2notrump}{\Alert{\NoTrumpBid{2}}}]
         \And{\ClubHand{5+}}{\DiamondHand{5+}}, \PCrange{6}{11}
-    \item[\ClubBid{3}]
+  \item[\ClubBid{3}]
         \ClubHand{7+}, \PCto{11} (\PCrange{6}{10})
-    \item[\DiamondBid{3}]
+  \item[\DiamondBid{3}]
         \DiamondHand{7+}, \PCto{11} (\PCrange{6}{10})
-    \item[\HeartBid{3}]
+  \item[\HeartBid{3}]
         \HeartHand{7+}, \PCto{11} (\PCrange{6}{10})
-    \item[\SpadeBid{3}]
+  \item[\SpadeBid{3}]
         \SpadeHand{7+}, \PCto{11} (\PCrange{6}{10})
 \end{description}
 

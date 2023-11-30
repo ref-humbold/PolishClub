@@ -3,48 +3,48 @@
 \begin{document}
 
 \BidSection{bid:2diamond}{\Alert{\DiamondBid{2}}}{
-    \Convention[\hspace{1em}]{multi}{
-        \Or
-        {\And{\HeartHand{6}}{\No{\SpadeHand{4}}}}
-        {\And{\SpadeHand{6}}{\No{\HeartHand{4}}}}, \PCrange{6}{11}
-    }
+  \Convention[\hspace{1em}]{multi}{
+    \Or
+    {\And{\HeartHand{6}}{\No{\SpadeHand{4}}}}
+    {\And{\SpadeHand{6}}{\No{\HeartHand{4}}}}, \PCrange{6}{11}
+  }
 }
 
 \begin{description}
-    \item[\HeartBid{2}] \PassOrCorrect{} with better \SpadeSymbol{} than \HeartSymbol, \PCto{13}
+  \item[\HeartBid{2}] \PassOrCorrect{} with better \SpadeSymbol{} than \HeartSymbol, \PCto{13}
         \begin{description}
-            \item[\PassBid] \HeartHand{6}
-            \item[\SpadeBid{2}] \SpadeHand{6}
+          \item[\PassBid] \HeartHand{6}
+          \item[\SpadeBid{2}] \SpadeHand{6}
         \end{description}
-    \item[\SpadeBid{2}] \PassOrCorrect{} with better \HeartSymbol{} than \SpadeSymbol, \PCto{13}
+  \item[\SpadeBid{2}] \PassOrCorrect{} with better \HeartSymbol{} than \SpadeSymbol, \PCto{13}
         \begin{description}
-            \item[\PassBid] \SpadeHand{6}
-            \item[\HeartBid{3}] \HeartHand{6}
+          \item[\PassBid] \SpadeHand{6}
+          \item[\HeartBid{3}] \HeartHand{6}
         \end{description}
-    \item[\NoTrumpBid{2}] \Relay, \PCfrom{14}
+  \item[\NoTrumpBid{2}] \Relay, \PCfrom{14}
         \begin{description}
-            \item[\ClubBid{3}] \PCrange{10}{11}
+          \item[\ClubBid{3}] \PCrange{10}{11}
                 \begin{description}
-                    \item[\DiamondBid{3}] ask for colour
+                  \item[\DiamondBid{3}] ask for colour
                         \begin{description}
-                            \item[\HeartBid{3}] \SpadeHand{6}
-                            \item[\SpadeBid{3}] \HeartHand{6}
+                          \item[\HeartBid{3}] \SpadeHand{6}
+                          \item[\SpadeBid{3}] \HeartHand{6}
                         \end{description}
                 \end{description}
-            \item[\DiamondBid{3}] \HeartHand{6}, \PCrange{6}{9}
-            \item[\HeartBid{3}] \SpadeHand{6}, \PCrange{6}{9}
+          \item[\DiamondBid{3}] \HeartHand{6}, \PCrange{6}{9}
+          \item[\HeartBid{3}] \SpadeHand{6}, \PCrange{6}{9}
         \end{description}
-    \item[\ClubBid{3}]
-    \item[\DiamondBid{3}] invit with \And{\HeartHand{2+}}{\SpadeHand{2+}}
-    \item[\ClubBid{4}] show the colour with transfer
+  \item[\ClubBid{3}]
+  \item[\DiamondBid{3}] invit with \And{\HeartHand{2+}}{\SpadeHand{2+}}
+  \item[\ClubBid{4}] show the colour with transfer
         \begin{description}
-            \item[\DiamondBid{4}] \Transfer{\HeartSymbol}, \HeartHand{6}
-            \item[\HeartBid{4}] \Transfer{\SpadeSymbol}, \SpadeHand{6}
+          \item[\DiamondBid{4}] \Transfer{\HeartSymbol}, \HeartHand{6}
+          \item[\HeartBid{4}] \Transfer{\SpadeSymbol}, \SpadeHand{6}
         \end{description}
-    \item[\DiamondBid{4}] show the colour directly
+  \item[\DiamondBid{4}] show the colour directly
         \begin{description}
-            \item[\HeartBid{4}] \HeartHand{6}
-            \item[\SpadeBid{4}] \SpadeHand{6}
+          \item[\HeartBid{4}] \HeartHand{6}
+          \item[\SpadeBid{4}] \SpadeHand{6}
         \end{description}
 \end{description}
 
