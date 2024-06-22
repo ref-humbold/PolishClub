@@ -10,32 +10,32 @@
 
 \begin{description}
   \item[\DiamondBid{2}] \Relay, \PCfrom{10}
+    \begin{description}
+      \item[\HeartBid{2}] \HeartHand{3+}
+      \item[\SpadeBid{2}] \SpadeHand{3+}
+      \item[\NoTrumpBid{2}] 6322, good for no trump from opener's hand
+      \item[\ClubBid{3}] \And{\ClubHand{6+}}{\No{\MajorHand{4}}}, good for no trump from partner's hand
         \begin{description}
-          \item[\HeartBid{2}] \HeartHand{3+}
-          \item[\SpadeBid{2}] \SpadeHand{3+}
-          \item[\NoTrumpBid{2}] 6322, good for no trump from opener's hand
-          \item[\ClubBid{3}] \And{\ClubHand{6+}}{\No{\MajorHand{4}}}, good for no trump from partner's hand
-                \begin{description}
-                  \item[\DiamondBid{3}] ask for shortage
-                        \begin{description}
-                          \item[\HeartBid{3}] shortage \HeartSymbol
-                          \item[\SpadeBid{3}] shortage \SpadeSymbol
-                          \item[\NoTrumpBid{3}] no shortage in majors
-                        \end{description}
-                \end{description}
+          \item[\DiamondBid{3}] ask for shortage
+            \begin{description}
+              \item[\HeartBid{3}] shortage \HeartSymbol
+              \item[\SpadeBid{3}] shortage \SpadeSymbol
+              \item[\NoTrumpBid{3}] no shortage in majors
+            \end{description}
         \end{description}
+    \end{description}
   \item[\HeartBid{2}] \HeartHand{5+}, \PCrange{6}{11}
   \item[\SpadeBid{2}] \SpadeHand{5+}, \PCrange{6}{11}
   \item[\NoTrumpBid{2}] \Variant{\ClubHand{3+}, \PCrange{0}{8}}{strong two suiter without \ClubSymbol}
+    \begin{description}
+      \item[\ClubBid{3}] obligatory
         \begin{description}
-          \item[\ClubBid{3}] obligatory
-                \begin{description}
-                  \item[\PassBid] \ClubHand{3+}
-                  \item[\GameForcing{\DiamondBid{3}}] \And{\DiamondHand{5+}}{\HeartHand{5+}}
-                  \item[\GameForcing{\HeartBid{3}}] \And{\HeartHand{5+}}{\SpadeHand{5+}}
-                  \item[\GameForcing{\SpadeBid{3}}] \And{\SpadeHand{5+}}{\DiamondHand{5+}}
-                \end{description}
+          \item[\PassBid] \ClubHand{3+}
+          \item[\GameForcing{\DiamondBid{3}}] \And{\DiamondHand{5+}}{\HeartHand{5+}}
+          \item[\GameForcing{\HeartBid{3}}] \And{\HeartHand{5+}}{\SpadeHand{5+}}
+          \item[\GameForcing{\SpadeBid{3}}] \And{\SpadeHand{5+}}{\DiamondHand{5+}}
         \end{description}
+    \end{description}
   \item[\ClubBid{3}] \ClubHand{3+}, \PCrange{9}{11}
 \end{description}
 
